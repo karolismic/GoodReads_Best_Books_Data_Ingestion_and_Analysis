@@ -1,42 +1,51 @@
 # GoodReads Best Books Data Ingestion and Analysis
 
 ## Project Overview
-This project involves setting up a MySQL database, ingesting data from CSV files, normalizing the data to the Second Normal Form (2NF), and performing exploratory data analysis.
+This project sets up a SQLite database using SQLAlchemy, imports data from CSV files, normalizes the data, and prepares the foundation for future exploratory data analysis tasks.
 
 ## Data Source
-The data is sourced from GoodReads and contains information about books, authors, and genres.
+The dataset originates from GoodReads and encompasses details about books, authors, and genres.
 
 ## Database Setup
-- MySQL database server is installed and running on localhost, port 3306.
-- A new schema named 'new_schema' is created for this project.
+- A SQLite database is utilized for this project due to its simplicity and ease of setup.
+- SQLAlchemy, an Object-Relational Mapping (ORM) tool, is used to interact with the database using Python.
 
 ## Data Normalization
-- Data is normalized to 2NF to eliminate redundancy and ensure data integrity.
-- Tables created: `books`, `authors`, `genres`.
-- Relationships between tables are established using foreign keys.
+- The data is normalized to reduce duplication and enhance data integrity.
+- The tables created include `books`, `authors`, and `genres`.
+- Each table is structured with appropriate primary keys and datatypes.
 
 ## Data Ingestion
-- Python script `import.py` is used to read CSV files and import data into MySQL.
-- Data is inserted into the respective normalized tables.
+<<<<<<< HEAD
+- The `main.py` Python script is developed to parse CSV files and populate the SQLite database.
+=======
+- The `import.py` Python script is developed to parse CSV files and populate the SQLite database.
+>>>>>>> 69c79605c4d389272ce3d65316822e6e0545423e
+- The script creates tables if they do not exist and inserts data into the respective tables.
 
 ## Exploratory Data Analysis
-- SQL queries and Python scripts are used for data exploration.
-- Analysis focuses on finding popular books, prolific authors, and common genres.
+- Although not covered in this script, the setup allows for subsequent exploratory data analysis using SQL queries or Python-based data analysis tools.
+- This analysis could include identifying trends among authors and genres, and discerning the most highly rated books.
 
 ## Improvement Suggestions
-- Implement indexing on frequently queried columns to enhance query performance.
-- Consider MySQL partitions for handling larger datasets efficiently.
-- Explore the possibility of using MySQL stored procedures for repeated complex operations.
+- Implement indexing on columns that are often used in search queries to improve performance.
+- For larger datasets, consider transitioning to a more robust database system like PostgreSQL or MySQL.
+- Integrate additional data sources for a more comprehensive analysis.
 
 ## How to Run the Project
-1. Ensure MySQL server is running and `new_schema` is created.
-2. Update the CSV file paths in the Python script.
-3. Run the Python script to create tables and import data.
-4. Use SQL queries and Python for exploratory data analysis.
+1. Ensure Python is installed on your system.
+2. Clone the repository and navigate to the project directory.
+<<<<<<< HEAD
+3. Run the `main.py` script to create the database and tables, and to import the data.
+=======
+3. Run the `import.py` script to create the database and tables, and to import the data.
+>>>>>>> 69c79605c4d389272ce3d65316822e6e0545423e
+
+After running the script, the database file my_database.db will be created and populated with data from the CSV files.
 
 ## Dependencies
-- MySQL Server
-- mysql-connector-python
+- SQLAlchemy
+- Pandas (for any data manipulation required during import)
 - Python 3
 - CSV files: `normalized_books.csv`, `normalized_authors.csv`, `normalized_genres.csv`
 
