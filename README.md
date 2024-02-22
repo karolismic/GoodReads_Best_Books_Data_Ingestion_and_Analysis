@@ -16,11 +16,8 @@ The dataset originates from GoodReads and encompasses details about books, autho
 - Each table is structured with appropriate primary keys and datatypes.
 
 ## Data Ingestion
-<<<<<<< HEAD
+
 - The `main.py` Python script is developed to parse CSV files and populate the SQLite database.
-=======
-- The `import.py` Python script is developed to parse CSV files and populate the SQLite database.
->>>>>>> 69c79605c4d389272ce3d65316822e6e0545423e
 - The script creates tables if they do not exist and inserts data into the respective tables.
 
 ## Exploratory Data Analysis
@@ -35,11 +32,8 @@ The dataset originates from GoodReads and encompasses details about books, autho
 ## How to Run the Project
 1. Ensure Python is installed on your system.
 2. Clone the repository and navigate to the project directory.
-<<<<<<< HEAD
 3. Run the `main.py` script to create the database and tables, and to import the data.
-=======
-3. Run the `import.py` script to create the database and tables, and to import the data.
->>>>>>> 69c79605c4d389272ce3d65316822e6e0545423e
+
 
 After running the script, the database file my_database.db will be created and populated with data from the CSV files.
 
